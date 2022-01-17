@@ -20,13 +20,13 @@ module.exports = {
     },
     goerli_infura: {
       provider: function(){
-        return new HDWalletProvider(process.env.MENEMONIC,"https://mainnet.infura.io/v3/8caed37592a841d986ca15fa0b3b6965",AccountIndex)
+        return new HDWalletProvider(process.env.MENEMONIC,process.env.GOERLI_INFURA,AccountIndex)
       },
       network_id: 5
     },
     ropsten_infura: {
       provider: function(){
-        return new HDWalletProvider(process.env.MENEMONIC,"https://ropsten.infura.io/v3/8caed37592a841d986ca15fa0b3b6965",AccountIndex)
+        return new HDWalletProvider(process.env.MENEMONIC,process.env.ROPSTEN_INFURA,AccountIndex)
       },
       network_id: 3
     }
